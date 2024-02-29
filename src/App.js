@@ -1,13 +1,17 @@
-import "./App.css";
+import './index.css';
+import Header from "./components/Header";
+import CardContainer from "./components/CardContainer";
+import Container from "react-bootstrap/Container";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import React from "react";
 
 function App() {
   return (
-    <div>
+    <Container>
+     <Header/>
+     <CardContainer/>
      
-      App
-    </div>
+    </Container>
   );
 }
 
