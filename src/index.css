@@ -1,16 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
+  
+  body {
+    background-color: #f46773;
+    background-image: url(https://www.sonperiyot.com/wp-content/uploads/2024/01/2026-nba-all-star-etkinlikleri-clippersin-yeni-salonu-intuit-dome-da-kopya-800x519.jpg.webp;);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 
-body {
-background-color: rgb(190, 159, 19);
-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1{
-    color: #f46773;
-}
+  h1{
+      color: #f46773;
+  }  
+  /*! Player Component Styling */
+  
+  .card-konteyner{
+    border-radius: 40px !important;
+   background-image:url("https://p4.wallpaperbetter.com/wallpaper/661/973/110/cool-nba-logo-wallpaper-preview.jpg")
 
  
+  
+  }
+  
+  .player-kart{
+   height: 400px;
+    /* width:280px; */
+     max-width: 280px;
+
+    border-radius: 20px !important;    
+  }
+  
+  .player-logo{
+      border-radius: 20px !important;
+      height:350px;
+      transition:transform 0.8s
+  }
+  .player-kart:hover .player-logo{
+
+  
+      transform:scale(0.95)
+  
+  }
+  
+  .player-kart:hover{
+       box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.5);
+  }

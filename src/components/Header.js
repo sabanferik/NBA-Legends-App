@@ -1,38 +1,15 @@
-import React, { useState } from "react";
-import { Col, Container, Form, Row } from "react-bootstrap";
-import { data } from "../helper/data";
-import PlayerCard from "./PlayerCard";
-
- 
-
-console.log(data);
-const CardContainer = () => {
-
-    const [search,setSearch]=useState("")
-    
-
-
+import React from 'react'
+// import Container from 'react-bootstrap/esm/Container'
+// import Image from 'react-bootstrap/esm/Image'
+import {Container, Image} from "react-bootstrap"
+import nbaLogo from "../assets/nba-logo.png"
+const Header = () => {
   return (
-    <>
-     <Form.Control placeholder="Search Player..." className="w-50 m-auto" type="search"
-onChange={(e)=>setSearch(e.target.value)}
+    <Container>
+<Image src={nbaLogo} width="200px"/>
+<h1 className='display-4 my-2 fw-bold font-monospace'>NBA Legends</h1>
+    </Container>
+  )
+}
 
-     />
-
-      <Container className="rounded-4 my-4 p-3 card-konteyner">
-        <Row className="justify-content-center g-3">
-         
-          {data.filter((player)=>player.name.toLowerCase().includes(search.toLowerCase())).map((player, index) => (
-            <Col md={6} lg={4} xl={3} key={index}>
-              
-              <PlayerCard {...player} />
-            </Col>
-          ))}
-          
-        </Row>
-      </Container>
-    </>
-  );
-};
-
-export default CardContainer;
+export default Header
